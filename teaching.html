@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Teaching – Pietro Ramella</title>
+  <meta charset="UTF-8">
+  <title>Teaching — Pietro Ramella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="nav">
-    <div class="nav-content">
-      <a class="logo" href="index.html">PR</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
-        <a href="personal.html">ABOUT</a>
-        <a href="code.html">CODE</a>
-      </nav>
+  <div class="particles" id="particles"></div>
+
+  <div class="nav-toggle" onclick="toggleNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-nav" id="sideNav">
+    <a class="logo" href="index.html">Pietro Ramella</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html" class="active">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html">About</a>
+      <a href="code.html">Code</a>
     </div>
-  </aside>
+  </nav>
 
-  <div class="profile"><h1>Teaching</h1></div>
-  
-  
-  <div class="course">
-    <h2>Financial Statement Analysis (B30130)</h2>
-    <p><strong>Professors:</strong> M. Minnis, A. Smith</p>
-    <p><strong>Years:</strong> 2023, 2024 (MBA & EXEC MBA)</p>
-    <p>Teaching Assistant</p>
-  </div>
+  <main class="content-page">
+    <h1>Teaching</h1>
 
-  <div class="course">
-    <h2>Taxes and Business Strategy (B30118)</h2>
-    <p><strong>Professors:</strong> I. Weiss, A. Welsch</p>
-    <p><strong>Year:</strong> 2024</p>
-    <p>Teaching Assistant</p>
-  </div>
+    <div style="margin-top: 3rem;">
+      <h2>Financial Statement Analysis (B30130)</h2>
+      <p><strong>Professors:</strong> M. Minnis, A. Smith</p>
+      <p><strong>Years:</strong> 2023, 2024 (MBA & EXEC MBA)</p>
+      <p><em>Teaching Assistant</em></p>
+    </div>
 
-  <div class="course">
-    <h2>Internal Information for Strategic Decisions (B30005)</h2>
-    <p><strong>Professor:</strong> D. Hanna</p>
-    <p><strong>Year:</strong> 2025</p>
-    <p>Teaching Assistant</p>
-  </div>
+    <div style="margin-top: 3rem;">
+      <h2>Taxes and Business Strategy (B30118)</h2>
+      <p><strong>Professors:</strong> I. Weiss, A. Welsch</p>
+      <p><strong>Year:</strong> 2024</p>
+      <p><em>Teaching Assistant</em></p>
+    </div>
 
+    <div style="margin-top: 3rem;">
+      <h2>Internal Information for Strategic Decisions (B30005)</h2>
+      <p><strong>Professor:</strong> D. Hanna</p>
+      <p><strong>Year:</strong> 2025</p>
+      <p><em>Teaching Assistant</em></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>CV – Pietro Ramella</title>
+  <meta charset="UTF-8">
+  <title>CV — Pietro Ramella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="nav">
-    <div class="nav-content">
-      <a class="logo" href="index.html">PR</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
-        <a href="personal.html">ABOUT</a>
-        <a href="code.html">CODE</a>
-      </nav>
-    </div>
-  </aside>
+  <div class="particles" id="particles"></div>
 
-  <div class="profile"><h1>Curriculum Vitae</h1></div>
-  <p>You can download my full CV <a href="https://www.dropbox.com/scl/fi/h17wabxr5ikdegn21p3gq/CV_PR.20250930.pdf?rlkey=40row00qt1m9vmrmud6s43z1b&st=cvovil1f&dl=0" target="_blank">here</a>.</p>
+  <div class="nav-toggle" onclick="toggleNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="side-nav" id="sideNav">
+    <a class="logo" href="index.html">Pietro Ramella</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="about.html">About</a>
+      <a href="code.html">Code</a>
+    </div>
+  </nav>
+
+  <main class="content-page">
+    <h1>Curriculum Vitae</h1>
+    
+    <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem;">
+      You can download my full CV 
+      <a href="https://www.dropbox.com/scl/fi/h17wabxr5ikdegn21p3gq/CV_PR.20250930.pdf?rlkey=40row00qt1m9vmrmud6s43z1b&st=cvovil1f&dl=0" target="_blank">here</a>.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

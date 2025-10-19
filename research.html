@@ -1,67 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Research – Pietro Ramella</title>
+  <meta charset="UTF-8">
+  <title>Research — Pietro Ramella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="nav">
-    <div class="nav-content">
-      <a class="logo" href="index.html">PR</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
-        <a href="personal.html">ABOUT</a>
-        <a href="code.html">CODE</a>
-      </nav>
-    </div>
-  </aside>
-  <div class="profile">
-  <h1>Research</h1>
+  <div class="particles" id="particles"></div>
+
+  <div class="nav-toggle" onclick="toggleNav()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <div class="paper">
-    <div class="paper-text">
-      <h2><a href="https://www.dropbox.com/scl/fi/azqdndddt2g5bhvgfbmy7/JMP-PRamella.20250930.pdf?rlkey=8eabyfwfmzu2fxfjotz39g7aw&st=5uvtt4ym&dl=0">Better AI, Worse Disclosures?<br>The Unintended Consequences of NLP on Financial Reporting</a></h2>
-      <p><strong>Solo authored:</strong> Job Market Paper</p>
-      <p><em>Abstract:</em> This paper studies how the growing use of algorithms to read and produce corporate disclosure can ultimately degrade disclosure quality. [...]</p>
-      <a class="view-paper" href="https://www.dropbox.com/scl/fi/azqdndddt2g5bhvgfbmy7/JMP-PRamella.20250930.pdf?rlkey=8eabyfwfmzu2fxfjotz39g7aw&st=5uvtt4ym&dl=0" target="_blank">View Paper</a>
+  <nav class="side-nav" id="sideNav">
+    <a class="logo" href="index.html">Pietro Ramella</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html">About</a>
+      <a href="code.html">Code</a>
     </div>
-    <div class="paper-image">
-      <img src="images/paper1.png" alt="Figure for Better AI Paper">
-    </div>
-  </div>
+  </nav>
 
-  <div class="paper">
-    <div class="paper-text">
-      <h2><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4035849">What Purpose Do Corporations Purport?<br>Evidence from Letters to Shareholders</a></h2>
-      <p><strong>Co-authors:</strong> Raghuram Rajan, and Luigi Zingales</p>
-      <p><em>Abstract:</em> Using natural language processing, we identify corporate goals stated in the shareholder letters of the 150 largest companies in the United States from 1955 to 2020. [...]</p>
-      </p>
-      <a class="view-paper" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4035849" target="_blank">View Paper</a>
+  <main class="research-page">
+    <div class="page-header">
+      <h1 class="page-title">Research</h1>
+      <p class="page-subtitle">Exploring financial disclosures and strategic communication</p>
     </div>
-    <div class="paper-image">
-      <img src="images/paper3.png" alt="Figure for Letters Paper">
-    </div>
-  </div>
-  
-  <div class="paper">
-    <div class="paper-text">
-      <h2><a href="https://papers.ssrn.com/yourpaper">The HSR Dodgers: Lawyers in M&A antitrust</a></h2>
-      <p><strong>Co-authors:</strong> Alexandra Scherf, and Carol Seregni</p>
-      <p><em>Abstract:</em> We propose that lawyers serve as a mechanism through which M&A firms seek to avoid antitrust scrutiny. [...]</p>
-      </p>
-      <a class="view-paper" href="mailto:pramell0@chicagobooth.edu"> target="_blank">Request Paper</a>
-    </div>
-    <div class="paper-image">
-      <!-- <img src="images/paper2.png" alt="Figure for Lawyers Paper"> -->
-    </div>
-  </div>
 
-  
-</div>
+    <div class="papers-container">
+      
+      <!-- Paper 1 - Job Market Paper -->
+      <article class="paper-card featured">
+        <div class="paper-badge">Job Market Paper</div>
+        <div class="paper-content-grid">
+          <div class="paper-text-area">
+            <h2 class="paper-heading">
+              <a href="https://www.dropbox.com/scl/fi/azqdndddt2g5bhvgfbmy7/JMP-PRamella.20250930.pdf?rlkey=8eabyfwfmzu2fxfjotz39g7aw&st=5uvtt4ym&dl=0" target="_blank">
+                Better AI, Worse Disclosures?
+                <span class="paper-heading-sub">The Unintended Consequences of NLP on Financial Reporting</span>
+              </a>
+            </h2>
+            
+            <div class="paper-meta">
+              <span class="meta-item">Solo authored</span>
+            </div>
+
+            <p class="paper-desc">
+              <strong>Abstract:</strong> This paper studies how the growing use of algorithms to read and produce corporate disclosure can ultimately degrade disclosure quality. Using a theoretical model, I demonstrate that when both managers and investors employ natural language processing algorithms, strategic disclosure behavior can lead to decreased information quality despite technological improvements...
+            </p>
+
+            <a class="paper-link" href="https://www.dropbox.com/scl/fi/azqdndddt2g5bhvgfbmy7/JMP-PRamella.20250930.pdf?rlkey=8eabyfwfmzu2fxfjotz39g7aw&st=5uvtt4ym&dl=0" target="_blank">
+              View Paper
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="paper-visual">
+            <div class="image-wrapper">
+              <img src="images/paper1.png" alt="Better AI Paper Figure">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paper 2 -->
+      <article class="paper-card">
+        <div class="paper-content-grid">
+          <div class="paper-text-area">
+            <h2 class="paper-heading">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4035849" target="_blank">
+                What Purpose Do Corporations Purport?
+                <span class="paper-heading-sub">Evidence from Letters to Shareholders</span>
+              </a>
+            </h2>
+            
+            <div class="paper-meta">
+              <span class="meta-item">Co-authors: Raghuram Rajan, Luigi Zingales</span>
+            </div>
+
+            <p class="paper-desc">
+              <strong>Abstract:</strong> Using natural language processing, we identify corporate goals stated in the shareholder letters of the 150 largest companies in the United States from 1955 to 2020. We document significant shifts in stated corporate purposes over time, with increasing emphasis on stakeholder considerations and decreasing focus on shareholder value maximization...
+            </p>
+
+            <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4035849" target="_blank">
+              View Paper
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="paper-visual">
+            <div class="image-wrapper">
+              <img src="images/paper3.png" alt="Corporate Purpose Paper Figure">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paper 3 -->
+      <article class="paper-card">
+        <div class="paper-content-grid">
+          <div class="paper-text-area">
+            <h2 class="paper-heading">
+              <a href="#">
+                The HSR Dodgers
+                <span class="paper-heading-sub">Lawyers in M&A Antitrust</span>
+              </a>
+            </h2>
+            
+            <div class="paper-meta">
+              <span class="meta-item">Co-authors: Alexandra Scherf, Carol Seregni</span>
+            </div>
+
+            <p class="paper-desc">
+              <strong>Abstract:</strong> We propose that lawyers serve as a mechanism through which M&A firms seek to avoid antitrust scrutiny. Through comprehensive analysis of merger filings and legal representation patterns, we document strategic choices in legal counsel selection that correlate with reduced regulatory attention...
+            </p>
+
+            <a class="paper-link" href="mailto:pramell0@chicagobooth.edu">
+              Request Paper
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="paper-visual">
+            <div class="image-wrapper placeholder">
+              <div class="placeholder-content">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="12" y1="18" x2="12" y2="12"></line>
+                  <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
